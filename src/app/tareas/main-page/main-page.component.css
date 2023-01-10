@@ -1,0 +1,39 @@
+.listas{
+  width: 50%;
+}
+
+.formulario{
+  width: 50%;
+}
+
+.reporte{
+  width: 50%;
+}
+
+@media (max-width: 767px) {
+  .formulario{
+    width: 90%;
+  }
+
+  .reporte{
+    width: 100%;
+  }
+
+  .listas{
+    width: 100%;
+  }
+}
+
+@media(min-width:767px){
+  .listas{
+    width:70%
+  }
+}
+
+@media(min-width:900px){
+  .listas{
+    width:50%
+  }
+}
+
+

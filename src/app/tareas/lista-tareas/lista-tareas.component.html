@@ -1,0 +1,30 @@
+
+<div class="input-group mb-3"  *ngFor="let tarea of VectorTareas; index as i" #listaTareas>
+  <!-- checkbox -->
+  <div class="input-group-text">
+    <input class="form-check-input border border-dark mt-0 cBox"
+            type="checkbox"
+            (change)="contarTareasFinalizadas(i)"
+            #cBox>
+  </div>
+
+  <!-- parrafo -->
+  <section class="w-75 border border-1 mb-0 p-1">
+    <p [textContent]="tarea.nombreTarea"></p>
+    <p [textContent]="tarea.descripcionTarea"></p>
+  </section>
+
+  <!-- boton eliminar tarea -->
+  <button class="btn btn-outline-secondary"
+          type="button"
+          id="button-addon2"
+          (click)="borrarTarea(i)"
+          >Eliminar
+  </button>
+
+</div>
+
+
+
+
+

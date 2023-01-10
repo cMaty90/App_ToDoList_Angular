@@ -1,0 +1,17 @@
+
+<form (ngSubmit)="procesarTarea()" class="d-flex flex-column p-3" #formulario>
+  <label>Nombre de la tarea</label>
+  <input type="text"
+         class="mb-3"
+         name="nombreTarea"
+         [(ngModel)]="tarea.nombreTarea"
+         placeholder="ejem: correr">
+
+  <label>Breve Descripcion</label>
+  <input type="text"
+         name="descripcionTarea"
+         [(ngModel)]="tarea.descripcionTarea"
+         placeholder="ejm: correr a las 7am">
+
+  <input class="btn btn-primary mt-3" type="submit" value="Agregar">
+</form>
